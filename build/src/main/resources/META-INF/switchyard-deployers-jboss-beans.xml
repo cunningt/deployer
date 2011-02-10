@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    JBoss Switchyard + JBossAS integration
+-->
+<deployment xmlns="urn:jboss:bean-deployer:2.0">
+
+  <!-- Switchyard deployer -->
+  <bean name="SwitchyardDeployer" class="org.switchyard.deployment.SwitchyardDeployer">
+    <property name="mainDeployer"><inject bean="MainDeployer"/></property>
+  </bean>
+
+</deployment>
