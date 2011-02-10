@@ -6,8 +6,11 @@
 <deployment xmlns="urn:jboss:bean-deployer:2.0">
 
   <!-- Switchyard deployer -->
-  <bean name="SwitchyardDeployer" class="org.switchyard.deployment.SwitchyardDeployer">
-    <property name="mainDeployer"><inject bean="MainDeployer"/></property>
+  <bean name="SwitchYardDeployer" class="org.switchyard.deployment.SwitchYardDeployer">
+<!--    <property name="mainDeployer"><inject bean="MainDeployer"/></property> -->
+  </bean>
+
+  <bean name="SwitchYardConfigParser" class="org.switchyard.deployment.SwitchYardConfigParser">
   </bean>
 
 </deployment>

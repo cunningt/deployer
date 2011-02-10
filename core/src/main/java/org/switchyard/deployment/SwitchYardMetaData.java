@@ -5,17 +5,21 @@ import java.util.Set;
 
 import javax.management.ObjectName;
 
-public class SwitchyardMetaData implements Serializable {
+public class SwitchYardMetaData implements Serializable {
     /** Serial version unique identifier. */
     private static final long serialVersionUID = 0L;
 
     /** The name of the .esb archive. */
-    private final String archiveName = null;
+    private String _archiveName = null;
 
     /** The deployment name. The .esb archive name without the .esb suffix */
-    private final String deploymentName = null;
-    private final Set<ObjectName> dependencies =  null;
+    private String _deploymentName = null;
 
+    public SwitchYardMetaData(String archiveName, String deploymentName) {
+    	_archiveName = archiveName;
+    	_deploymentName = deploymentName;
+    }
+    
     /**
      * Gets the name of the archive that this metadata came from.
      *
@@ -23,7 +27,7 @@ public class SwitchyardMetaData implements Serializable {
      */
     public final String getArchiveName()
     {
-        return archiveName;
+        return _archiveName;
     }
 
     /**
@@ -33,6 +37,6 @@ public class SwitchyardMetaData implements Serializable {
      */
     public String getDeploymentName()
     {
-        return deploymentName;
+        return _deploymentName;
     }
 }

@@ -45,22 +45,27 @@
             <dependency>
                 <groupId>org.jboss.deployers</groupId>
                 <artifactId>jboss-deployers-impl</artifactId>
-                <version>2.2.0.M2</version>
+                <version>2.2.0.GA</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.deployers</groupId>
                 <artifactId>jboss-deployers-core-spi</artifactId>
-                <version>2.2.0.M2</version>
+                <version>2.2.0.GA</version>
             </dependency>
 	    <dependency>
                 <groupId>org.jboss.deployers</groupId>
                 <artifactId>jboss-deployers-vfs</artifactId>
-                <version>2.2.0.M2</version>
+                <version>2.2.0.GA</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss</groupId>
+                <artifactId>jboss-vfs</artifactId>
+                <version>3.0.0.GA</version>
             </dependency>
             <dependency> 
                 <groupId>org.jboss.deployers</groupId>
                 <artifactId>jboss-deployers-vfs-spi</artifactId>
-                <version>2.2.0.M2</version>
+                <version>2.2.0.GA</version>
             </dependency>
             <dependency>
                 <groupId>log4j</groupId>
@@ -72,6 +77,5 @@
                 <artifactId>junit</artifactId>
                 <version>4.8.1</version>
             </dependency>
-
 	</dependencies>
 </project>
